@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+body {
+  font-family: "Tangerine", serif;
+  background: url(./imgs/back.jpg);
+  background-attachment: fixed;
+}
+:root {
+  --primary: #ffd7d6;
+  --secondary: #ffffc9;
+  --tertiary: #ffe3fe;
+  --quaternary: #c9ffda;
+  --quinary: #e9d6ff;
+  --col: #f352e4;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.imagenes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+}
+.imagen {
+  width: 25%;
+}
+.imagen img {
+  width: 100%;
+  height: auto;
+}
+.cake {
+  width: 35%;
+}
+.pastel {
+  width: 80%;
+  margin-left: 10%;
+  transform: rotate(20deg);
+}
+.globos {
+  width: 12%;
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  transform: rotate(30deg);
+}
+.gift {
+  width: 35%;
+}
+.gift img {
+  width: 15%;
+  /* margin-left: 20%; */
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  transform: rotate(-20deg);
+}
+
+.phrase {
+  width: 100%;
+}
+.phrase h1 {
+  font-size: 150px;
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  color: var(--secondary);
+  text-shadow: 2px 2px #000;
+}
+.things {
+  width: 100%;
+  /* background: red; */
+}
+.things img {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
