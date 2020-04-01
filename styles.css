@@ -9,8 +9,8 @@ body {
   background-attachment: fixed;
 }
 :root {
-  --primary: #ffd7d6;
-  --secondary: #ffffc9;
+  --primary: #d234f7;
+  --secondary: #f7c340;
   --tertiary: #ffe3fe;
   --quaternary: #c9ffda;
   --quinary: #e9d6ff;
@@ -33,7 +33,7 @@ body {
   align-items: center;
 }
 .imagen {
-  width: 25%;
+  width: 23%;
 }
 .imagen img {
   width: 100%;
@@ -74,7 +74,7 @@ body {
   position: absolute;
   bottom: 20px;
   left: 15px;
-  color: var(--secondary);
+  color: var(--primary);
   text-shadow: 2px 2px #000;
 }
 .things {
@@ -82,9 +82,42 @@ body {
   /* background: red; */
 }
 .things img {
-  width: 30%;
+  width: 50%;
   height: auto;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.surprise {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .imagen {
+    width: 30%;
+  }
+  .phrase h1 {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .imagen {
+    width: 80%;
+  }
+  .phrase h1 {
+    font-size: 80px;
+  }
+  .things img {
+    width: 80%;
+    height: 60vh;
+  }
+  .surprise {
+    display: inline;
+    width: 50%;
+    position: absolute;
+    top: 10px;
+  }
+  .surprise img {
+    width: 100%;
+  }
 }
